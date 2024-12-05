@@ -1,0 +1,24 @@
+name: Build and Publish Image to Docker Hub
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag declanlewis/x00217707webapp:latest
+    - name: push to docker hub
+      run: |
+        docker login declanlewis -p ${{secrets.DOCKER_HUB_TOKEN}}
+        docker push declanlewis/x00217707webapp:latest
+          
