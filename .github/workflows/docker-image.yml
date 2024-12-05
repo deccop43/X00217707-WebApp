@@ -18,6 +18,8 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag declanlewis/x00217707webapp:latest
     - name: login and push to docker hub
-      run: docker login declanlewis -p ${{secrets.DOCKER_HUB_TOKEN}} docker push declanlewis/x00217707webapp:latest
+      run: |
+        docker login declanlewis -p ${{secrets.DOCKER_HUB_TOKEN}} 
+        docker push declanlewis/x00217707webapp:latest
 
           
