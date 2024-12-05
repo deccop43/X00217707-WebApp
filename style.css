@@ -1,0 +1,102 @@
+body{
+    padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+	}
+
+#container {
+	width:80%;	
+    background-image: url(background.jpg);
+	background-color: #FFFFFF;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+header {
+	width: 100%;
+    background-color:  rgb(12, 7, 30);	
+    display:inline-block;
+
+	}
+		
+header img{
+	width: 20%;
+	height: 20%;
+    float: left;
+	}
+
+h1{
+    color: rgb(64, 192, 247);
+    font-size: 4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+h3{
+    color: rgb(64, 192, 247);
+    font-size: 1.7em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-stretch: expanded;
+    font-weight: bold;
+}
+
+h7 {
+        font-size: 1em;
+        color: white;
+        padding-right: .5em;
+    }
+
+main {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align:left;
+	}
+		
+.introduction{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.2em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-stretch: expanded;
+    padding-bottom: 3em;
+}
+
+.homemain{
+    display: inline-block;
+    padding-left: 6em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: white;
+    margin-bottom: 10em;
+}
+
+.homemain img{
+    width: 6em
+}
+
+.wrapper
+    {
+        display: flex;
+        width: 100%;
+        padding-bottom: 5em;
+    }
+
+form {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10em;
+    color: white;
+    text-align: left;
+}
+
+.comment{
+    max-width: 100%;
+}
+
