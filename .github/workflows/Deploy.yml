@@ -53,7 +53,7 @@ jobs:
         id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@c804dfbdd57f713b6c079302a4c01db7017a36fc
         with:
-          task-definition: ${{ env.X00217707WebApp:2 }}
+          task-definition: ${{ env.X00217707WebApp }}
           container-name: ${{ env.x00217707webapp}}
           image: ${{ steps.build-image.outputs.image }}
 
